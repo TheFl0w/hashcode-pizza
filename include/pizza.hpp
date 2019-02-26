@@ -1,14 +1,11 @@
 #pragma once
 
 #include <istream>
-#include <vector>
 
-struct Input {
-    int r;
-    int c;
-    int l;
-    int h;
-    std::vector<char> matrix;
-};
+extern int r;
+extern int c;
+extern int h;
+extern int l;
+extern char *mat;
 
-Input read_input(std::istream& is);
+void read_input(std::istream& is);
